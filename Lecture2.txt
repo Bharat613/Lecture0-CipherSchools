@@ -1,0 +1,18 @@
+Code efficiency : It is a broad term used to describe the reliability, speed, and programming methodology used in developing codes for an application. It is directly linked with algorithmic 
+efficiency and the speed of runtime execution for software . The goal of code efficiency is to reduce resource consumption and completion time as much as possible with minimum risk to 
+the business or operating environment
+
+High-level languages and low-level languages are two types of programming languages. 
+The main difference between the two is that low-level languages are closer to the system hardware and require knowledge of hardware to write instructions, whereas high-level programming 
+languages are machine-independent languages that do not require hardware knowledge to write instructions 12345.
+
+Here are some differences between high-level and low-level languages:
+
+Programmer friendliness: High-level languages are programmer-friendly, whereas low-level languages are machine-friendly.
+Memory efficiency: Low-level languages are more memory-efficient than high-level languages.
+Ease of understanding: High-level languages are easier to understand than low-level languages.
+Debugging complexity: Debugging is easier in high-level languages than in low-level languages.
+Maintainability complexity: Low-level languages are more complex to maintain than high-level languages.
+Portability: High-level languages are portable, whereas low-level languages are non-portable.
+Platform independence: High-level languages are platform-independent, whereas low-level languages are platform-dependent.
+Translation method: High-level languages need a compiler or interpreter for translation, whereas low-level languages need an assembler for translation.
