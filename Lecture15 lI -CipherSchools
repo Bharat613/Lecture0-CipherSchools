@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string> // Required for using C++ strings
+
+int main() {
+    // Input a string from the user
+    std::string userString;
+    std::cout << "Enter a string: ";
+    std::getline(std::cin, userString);
+
+    // Display the length of the entered string
+    std::cout << "Length of the string: " << userString.length() << std::endl;
+
+    // Display the string in reverse order
+    std::cout << "Reversed string: ";
+    for (int i = userString.length() - 1; i >= 0; --i) {
+        std::cout << userString[i];
+    }
+    std::cout << std::endl;
+
+    // Check if the string is a palindrome
+    bool isPalindrome = true;
+    for (int i = 0, j = userString.length() - 1; i < j; ++i, --j) {
+        if (userString[i] != userString[j]) {
+            isPalindrome = false;
+            break;
+        }
+    }
+
+    if (isPalindrome) {
+        std::cout << "The string is a palindrome." << std::endl;
+    } else {
+        std::cout << "The string is not a palindrome." << std::endl;
+    }
+
+    return 0;
+}
