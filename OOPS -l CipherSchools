@@ -1,0 +1,36 @@
+#include <iostream>
+
+// Base class 1
+class Animal {
+public:
+    void eat() {
+        std::cout << "Animal is eating" << std::endl;
+    }
+};
+
+// Base class 2
+class Bird {
+public:
+    void fly() {
+        std::cout << "Bird is flying" << std::endl;
+    }
+};
+
+// Derived class inheriting from both Animal and Bird
+class FlyingAnimal : public Animal, public Bird {
+public:
+    void performActions() {
+        eat(); // Accessing eat() from Animal
+        fly(); // Accessing fly() from Bird
+    }
+};
+
+int main() {
+    // Creating an object of the derived class
+    FlyingAnimal myFlyingAnimal;
+
+    // Calling a method from the derived class
+    myFlyingAnimal.performActions();
+
+    return 0;
+}
