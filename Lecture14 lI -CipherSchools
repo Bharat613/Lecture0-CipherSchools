@@ -1,0 +1,37 @@
+#include <iostream>
+
+// Function to calculate the area of a rectangle
+double calculateRectangleArea(double length, double width) {
+    return length * width;
+}
+
+// Function to calculate the square of a number
+int calculateSquare(int num) {
+    return num * num;
+}
+
+int main() {
+    // Variables to store user input
+    double length, width;
+    int number;
+
+    // Get user input for rectangle dimensions
+    std::cout << "Enter the length of the rectangle: ";
+    std::cin >> length;
+    std::cout << "Enter the width of the rectangle: ";
+    std::cin >> width;
+
+    // Call the calculateRectangleArea function and display the result
+    double rectangleArea = calculateRectangleArea(length, width);
+    std::cout << "The area of the rectangle is: " << rectangleArea << std::endl;
+
+    // Get user input for a number
+    std::cout << "Enter a number to calculate its square: ";
+    std::cin >> number;
+
+    // Call the calculateSquare function and display the result
+    int squareResult = calculateSquare(number);
+    std::cout << "The square of the number is: " << squareResult << std::endl;
+
+    return 0;
+}
