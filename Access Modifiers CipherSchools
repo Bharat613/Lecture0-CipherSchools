@@ -1,0 +1,51 @@
+#include <iostream>
+
+// Class definition
+class MyClass {
+public:
+    // Public members are accessible from outside the class
+    int publicVar;
+
+    // Public member function
+    void publicFunction() {
+        std::cout << "Public function called." << std::endl;
+    }
+
+private:
+    // Private members are only accessible within the class
+    int privateVar;
+
+    // Private member function
+    void privateFunction() {
+        std::cout << "Private function called." << std::endl;
+    }
+
+protected:
+    // Protected members are accessible within the class and its derived classes
+    int protectedVar;
+
+    // Protected member function
+    void protectedFunction() {
+        std::cout << "Protected function called." << std::endl;
+    }
+};
+
+int main() {
+    // Create an object of MyClass
+    MyClass myObject;
+
+    // Accessing public members
+    myObject.publicVar = 42;
+    std::cout << "Public variable: " << myObject.publicVar << std::endl;
+    myObject.publicFunction();
+
+    // Accessing private and protected members will result in a compilation error
+    // myObject.privateVar = 10; // Error: 'int MyClass::privateVar' is private
+    // myObject.privateFunction(); // Error: 'void MyClass::privateFunction()' is private
+
+    // Accessing protected members will result in a compilation error outside the class or its derived classes
+    // myObject.protectedVar = 20; // Error: 'int MyClass::protectedVar' is protected
+    // myObject.protectedFunction(); // Error: 'void MyClass::protectedFunction()' is protected
+
+    return 0;
+}
