@@ -1,0 +1,27 @@
+#include <iostream>
+
+// Function to add two numbers and return the result
+int add(int a, int b) {
+    return a + b;
+}
+
+// Function to multiply two numbers and return the result
+double multiply(double x, double y) {
+    return x * y;
+}
+
+int main() {
+    // Example of passing parameters and using return types
+    int num1 = 5, num2 = 7;
+    double double1 = 3.5, double2 = 2.0;
+
+    // Call the add function and print the result
+    int sum = add(num1, num2);
+    std::cout << "Sum: " << sum << std::endl;
+
+    // Call the multiply function and print the result
+    double product = multiply(double1, double2);
+    std::cout << "Product: " << product << std::endl;
+
+    return 0;
+}
