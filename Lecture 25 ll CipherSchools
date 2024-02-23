@@ -1,0 +1,28 @@
+#include <iostream>
+
+// Definition of a simple class named "Person"
+class Person {
+public:
+    // Member variables
+    std::string name;
+    int age;
+
+    // Member function to display information about the person
+    void displayInfo() {
+        std::cout << "Name: " << name << ", Age: " << age << " years old." << std::endl;
+    }
+};
+
+int main() {
+    // Creating an object of the "Person" class
+    Person myPerson;
+
+    // Assigning values to the member variables
+    myPerson.name = "John Doe";
+    myPerson.age = 25;
+
+    // Calling the member function to display information
+    myPerson.displayInfo();
+
+    return 0;
+}
