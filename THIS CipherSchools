@@ -1,0 +1,26 @@
+#include <iostream>
+
+class MyClass {
+private:
+    int data;
+
+public:
+    // Constructor to initialize the data member
+    MyClass(int value) : data(value) {}
+
+    // Member function to display the value using 'this'
+    void display() {
+        // Accessing class member 'data' using 'this'
+        std::cout << "Value using 'this': " << this->data << std::endl;
+    }
+};
+
+int main() {
+    // Create an object of MyClass
+    MyClass myObject(42);
+
+    // Call the display function
+    myObject.display();
+
+    return 0;
+}
