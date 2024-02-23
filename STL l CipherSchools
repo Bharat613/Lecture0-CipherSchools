@@ -1,0 +1,27 @@
+#include <iostream>
+
+// Function to add two integers
+int add(int a, int b) {
+    return a + b;
+}
+
+// Function to add three integers
+int add(int a, int b, int c) {
+    return a + b + c;
+}
+
+// Function to concatenate two strings
+std::string add(const std::string& str1, const std::string& str2) {
+    return str1 + str2;
+}
+
+int main() {
+    // Calling the overloaded functions
+    std::cout << "Sum of two integers: " << add(5, 7) << std::endl;
+    std::cout << "Sum of three integers: " << add(2, 4, 6) << std::endl;
+
+    std::string result = add("Hello, ", "world!");
+    std::cout << "Concatenated string: " << result << std::endl;
+
+    return 0;
+}
