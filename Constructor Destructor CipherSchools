@@ -1,0 +1,33 @@
+#include <iostream>
+
+class MyClass {
+private:
+    int data;
+
+public:
+    // Constructor with parameter
+    MyClass(int value) : data(value) {
+        std::cout << "Constructor called. Value set to: " << data << std::endl;
+    }
+
+    // Destructor
+    ~MyClass() {
+        std::cout << "Destructor called. Cleaning up with value: " << data << std::endl;
+    }
+
+    // Member function
+    void display() {
+        std::cout << "Value: " << data << std::endl;
+    }
+};
+
+int main() {
+    // Creating an object of MyClass with constructor called
+    MyClass myObject(42);
+
+    // Calling the display function
+    myObject.display();
+
+    // Destructor will be automatically called when myObject goes out of scope
+    return 0;
+}
