@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstring> // Required for string manipulation functions
+
+int main() {
+    // Character Array (C-style string)
+    const char hello[] = "Hello, ";
+    const char world[] = "World!";
+
+    // Concatenating character arrays
+    char greeting[50]; // Make sure the array is large enough to hold the concatenated string
+    strcpy(greeting, hello);
+    strcat(greeting, world);
+
+    // Displaying the concatenated string
+    std::cout << "Using Character Array: " << greeting << std::endl;
+
+    // C++ String
+    std::string cppHello = "Hello, ";
+    std::string cppWorld = "World!";
+
+    // Concatenating C++ strings
+    std::string cppGreeting = cppHello + cppWorld;
+
+    // Displaying the concatenated string
+    std::cout << "Using C++ String: " << cppGreeting << std::endl;
+
+    return 0;
+}
